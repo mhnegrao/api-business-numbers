@@ -1,3 +1,3 @@
-# api-small-trade-app
+# api-business-numbers
 
-## Atualizando
+## api da plataforma business-numbers-app

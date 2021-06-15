@@ -3,7 +3,8 @@ import { Prisma, PrismaClient } from "@prisma/client";
 import { IUser } from "../services/interfaces";
 import bcrypt from "bcryptjs";
 const prisma = new PrismaClient();
-class UsuarioController {
+
+class UserController {
   async index(rreq: express.Request, res: express.Response) {
     const users = await prisma.user.findMany();
 
@@ -78,4 +79,4 @@ class UsuarioController {
   }
 }
 
-module.exports = new UsuarioController();
+module.exports = new UserController();
